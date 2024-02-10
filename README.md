@@ -1,3 +1,25 @@
+### App Preview 
+
+![Website Preview](src/assets/image_1.png)
+
+![Website Preview](src/assets/image_2.png)
+
+![Website Preview](src/assets/image_3.png)
+
+
+### Complete Website Figma Design
+
+![Website Preview](src/assets/image_4.png)
+
+As there multiple sections with a lot of content in each section, the website wireframe consists of the following design:
+
+1) Top container consists of filters for multiple categories with a green slider on right side.
+2) The picture shows that Category-1 is selected, which displays sections 2, 3 & 4 having relevant content.
+3) Middle container consisting of sections also has a slider if there are more than 3 sections which makes the design scalable and user-friendly 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,21 +91,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### App Preview 
-
-![Website Preview](src/assets/image_1.png)
-
-![Website Preview](src/assets/image_2.png)
-
-![Website Preview](src/assets/image_3.png)
-
-
-### Complete Website Figma Design
-
-![Website Preview](src/assets/image_4.png)
-
-As there multiple sections with a lot of content in each section, the website wireframe consists of the following design:
-
-1) Top container consists of filters for multiple categories with a green slider on right side.
-2) The picture shows that Category-1 is selected, which displays sections 2, 3 & 4 having relevant content.
-3) Middle container consisting of sections also has a slider if there are more than 3 sections which makes the design scalable and user-friendly 
