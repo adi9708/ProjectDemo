@@ -1,0 +1,123 @@
+/* TreeMenu.module.css */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(6, 215, 177, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(0, 123, 255, 0);
+  }
+}
+
+.treeNode {
+  cursor: pointer;
+  user-select: none;
+  padding: 12px 25px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #0b0641; /* Updated to dark blue */
+  color: white; /* Text color updated to white */
+  /* width: auto; */
+  /* min-width: 140px;  */
+}
+
+.platformNode {
+  color: #06d7b1; /* Light green for Platform text */
+}
+
+.productFeatureNode {
+  color: #01d5ff; /* Light blue for Products and Features text */
+}
+
+.otherNode {
+  color: white; /* White color for other texts */
+}
+
+.treeNode:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Animation for node text */
+.treeNode span {
+  transition: all 0.3s ease;
+}
+
+.treeNode:hover span {
+  letter-spacing: 1px;
+}
+
+.expanded, .collapsed {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.childNode {
+  padding-left: 40px;
+}
+
+.radio {
+  margin-right: 8px;
+}
+
+.alert {
+  margin-left: 8px;
+  color: #28a745; /* Success color for better visibility */
+  font-size: 0.8rem;
+}
+
+/* Background for each text box */
+.treeNode::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0b0641; /* Updated to dark blue */
+  z-index: -1;
+  border-radius: 5px;
+}
+
+
+.selectedNode {
+  animation: pulse 1.5s infinite;
+  background-color: 
+  rgb(1, 213, 255); /* Bootstrap primary color for reference */
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Enhancements for animation on text */
+.treeNode span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.treeNode:hover span {
+  transform: scale(1.05);
+}
+
+.selectedIndicator {
+  display: none; /* Hide by default */
+  color: #28a745; /* Success color */
+  margin-left: 8px;
+  font-size: 0.8rem;
+}
+
+.treeNode.selected .selectedIndicator {
+  display: inline; /* Show when the node is selected */
+}
+
+
